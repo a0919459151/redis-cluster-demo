@@ -54,6 +54,10 @@ services:
     network_mode: host
 ```
 
+### CD
+```bash
+cd /mnt/c/Users/Joe/source/repos/redis-cluster-demo/docker
+```
 
 ### Run docker compose
 ``` bash
@@ -61,7 +65,7 @@ docker compose -p redis-cluster up -d
 ```
 
 ### Check container
-```bash
+```bashs
 docker ps
 ```
 
@@ -195,7 +199,7 @@ S: 005cb9f66aad945e29ba0252869a176ed2c0eb36 172.20.39.210:6384
 
 ### Set string
 ``` bash
-joe@DESKTOP-I46A06U:/mnt/c/Users/Joe/source/repos/redis-cluster/docker$ redis-cli -p 6381 redis-cli -p 6381
+joe@DESKTOP-I46A06U:/mnt/c/Users/Joe/source/repos/redis-cluster/docker$ redis-cli -p 6381
 127.0.0.1:6381> set k1 v1
 (error) MOVED 12706 172.20.39.210:6383
 127.0.0.1:6381> set k2 v2
